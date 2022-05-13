@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.login {
+  min-width: 500px;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  overflow: hidden;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+.formLogin input {
+  margin: 5px;
+  width: 250px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#submit {
+  background-color: black;
   color: white;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.formHead {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dashboard {
+  min-width: 400px;
+  height: 200px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  padding: 0;
+}
+.dashboardHead {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+.dashboardHead span {
+  font-size: 12px;
+  color: red;
+}
+.dashboardBody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  /* background-color: grey; */
+  position: relative;
+}
+.dashboardSubmit {
+  background-color: black;
+  color: white;
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+    /* flex-grow: 1; */
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
