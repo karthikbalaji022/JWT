@@ -22,8 +22,8 @@ app.get("/api12",async (req,res)=>{
 })
 
 app.use('/api/v1',jwtroute);
-app.use(notfound)
 app.use(errorHandle)
+app.use(notfound)
 
 
 const port=process.env.PORT || 9000;

@@ -2,8 +2,8 @@ const express=require('express');
 const route=express.Router();
 
 const {login,dashboard}=require('../controller/controller')
-
-route.route('/login').get(login);
-route.route('/dashboard').get(dashboard);
+const authentication=require('../middleware/authentication')
+route.route('/login').post(login);
+route.route('/dashboard').get(authentication,dashboard);
 
 module.exports=route;
